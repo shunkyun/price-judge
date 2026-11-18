@@ -1,0 +1,34 @@
+# 秘密情報（APIキー等）は絶対にコミットしない。キーは Render の Environment 画面か手元の .env にだけ書く
+.env
+.env.*
+!.env.example
+*.env.txt
+*.pem
+*.key
+
+# データベース（価格の記録）・実行時データ
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# 配布用 zip・検品記録（第三者レビューの記録は公開リポジトリに含めない）
+dist/
+reviews/
+
+# Python・テスト・エディタ
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

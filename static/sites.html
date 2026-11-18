@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>対応サイト一覧｜価格チェッカー</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css?v=1.4.0">
+</head>
+<body>
+<main class="dash sites">
+<p><a href="/">← 価格チェッカーに戻る</a></p>
+<div class="card">
+<h1>対応サイト一覧</h1>
+<p>価格は、この一覧にあるサイトから<strong>実際に取得した値だけ</strong>を使います。サイトごとにできることが違います。</p>
+<ul class="legend-list">
+<li><b>自動検索</b>：商品名で検索したとき自動で価格を集めます。楽天市場・Yahoo!ショッピングの公式API経由です。専門店は、その店の<b>楽天市場店・Yahoo!店</b>に絞った検索も行い「○○（楽天市場店）」のように表示します（商品の種類に合う店を1回の検索で最大 <span id="shopMax">2</span> 店）。</li>
+<li><b>URL読み取り</b>：商品ページのURLを貼ったとき、そのページに埋め込まれた構造化データ（JSON-LD など）から価格を読みます。読む前に毎回 <code>robots.txt</code> を確認し、許可されていないページや確認できないサイトは読みません。検索ページの自動巡回（スクレイピング）はしません。</li>
+<li><b>公式API</b>：店舗自身が価格を取得できるAPIを公開しているか。</li>
+</ul>
+<p id="apiState" class="k"></p>
+<p class="k">状態の確認日：<span id="verified"></span>（このサーバー環境から確認した結果です。店舗コードやサイトの状況は変わることがあります）</p>
+</div>
+<div class="card">
+<div class="table-wrap"><table id="sitesTable" class="obs"><thead><tr>
+<th>サイト</th><th>分野</th><th>自動検索</th><th>公式API</th><th>URL読み取り</th><th>備考</th>
+</tr></thead><tbody></tbody></table></div>
+</div>
+</main>
+<script src="/static/sites.js?v=1.4.0"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+{
+  "_comment": "ブランド・シリーズ名の別名辞書（N-1）。照合前にクエリとタイトルの両方で、右側の表記を左側の正規形に置き換える。英字・カタカナ・スペース有無の揺れを登録する。価格には一切関与しない。 R3-2: 'contextual' は同じ文字列に requires のどれかがあるときだけ適用するあいまいな別名。'無印' 単独はノーブランドの意味があるため登録しない。'numbered_series' はクエリに無い番号（Switch 2 等）を別モデルとして扱うシリーズ名。 'brands'/'generic' 以外の正規形（シリーズ名）は、クエリにあればタイトルにも必須。",
+  "aliases": {
+    "sony": [
+      "ソニー",
+      "sony"
+    ],
+    "nike": [
+      "ナイキ",
+      "nike"
+    ],
+    "adidas": [
+      "アディダス",
+      "adidas"
+    ],
+    "asics": [
+      "アシックス",
+      "asics"
+    ],
+    "new balance": [
+      "ニューバランス",
+      "ニュー バランス",
+      "new balance",
+      "newbalance"
+    ],
+    "converse": [
+      "コンバース",
+      "converse"
+    ],
+    "vans": [
+      "ヴァンズ",
+      "vans"
+    ],
+    "puma": [
+      "プーマ",
+      "puma"
+    ],
+    "the north face": [
+      "ザ ノース フェイス",
+      "ザノースフェイス",
+      "ザ ノースフェイス",
+      "ノースフェイス",
+      "ノース フェイス",
+      "the north face",
+      "thenorthface",
+      "north face"
+    ],
+    "patagonia": [
+      "パタゴニア",
+      "patagonia"
+    ],
+    "uniqlo": [
+      "ユニクロ",
+      "uniqlo"
+    ],
+    "muji": [
+      "無印良品",
+      "muji"
+    ],
+    "levis": [
+      "リーバイス",
+      "levi's",
+      "levi s",
+      "levis"
+    ],
+    "champion": [
+      "チャンピオン",
+      "champion"
+    ],
+    "apple": [
+      "アップル",
+      "apple"
+    ],
+    "iphone": [
+      "アイフォーン",
+      "アイフォン",
+      "i phone",
+      "iphone"
+    ],
+    "ipad": [
+      "アイパッド",
+      "i pad",
+      "ipad"
+    ],
+    "airpods": [
+      "エアーポッズ",
+      "エアポッズ",
+      "air pods",
+      "airpods"
+    ],
+    "apple watch": [
+      "アップルウォッチ",
+      "アップル ウォッチ",
+      "apple watch",
+      "applewatch"
+    ],
+    "nintendo": [
+      "ニンテンドー",
+      "任天堂",
+      "nintendo"
+    ],
+    "switch": [
+      "switch"
+    ],
+    "dyson": [
+      "ダイソン",
+      "dyson"
+    ],
+    "panasonic": [
+      "パナソニック",
+      "panasonic"
+    ],
+    "balmuda": [
+      "バルミューダ",
+      "balmuda"
+    ],
+    "zojirushi": [
+      "象印",
+      "zojirushi"
+    ],
+    "air max": [
+      "エアマックス",
+      "エア マックス",
+      "エアーマックス",
+      "air max",
+      "airmax"
+    ],
+    "air force": [
+      "エアフォース",
+      "エア フォース",
+      "エアーフォース",
+      "air force",
+      "airforce"
+    ],
+    "dunk": [
+      "dunk"
+    ],
+    "samba": [
+      "samba"
+    ],
+    "stan smith": [
+      "スタンスミス",
+      "スタン スミス",
+      "stan smith",
+      "stansmith"
+    ],
+    "gelkayano": [
+      "ゲルカヤノ",
+      "ゲル カヤノ",
+      "gel kayano",
+      "gel-kayano",
+      "gelkayano"
+    ],
+    "all star": [
+      "オールスター",
+      "オール スター",
+      "all star",
+      "allstar"
+    ],
+    "old skool": [
+      "オールドスクール",
+      "オールド スクール",
+      "old skool",
+      "oldskool"
+    ],
+    "nuptse": [
+      "ヌプシ",
+      "nuptse"
+    ],
+    "retro x": [
+      "レトロx",
+      "レトロ x",
+      "retro x",
+      "retrox"
+    ],
+    "ultra light down": [
+      "ウルトラライトダウン",
+      "ウルトラ ライト ダウン",
+      "ultra light down",
+      "ultralightdown"
+    ],
+    "heattech": [
+      "ヒートテック",
+      "heattech"
+    ],
+    "airism": [
+      "エアリズム",
+      "airism"
+    ],
+    "nanocare": [
+      "ナノケア",
+      "nanocare"
+    ],
+    "jacket": [
+      "ジャケット",
+      "jacket"
+    ],
+    "sneaker": [
+      "スニーカー",
+      "sneakers",
+      "sneaker"
+    ],
+    "headphone": [
+      "ヘッドホン",
+      "ヘッドフォン",
+      "headphones",
+      "headphone"
+    ],
+    "earphone": [
+      "イヤホン",
+      "イヤフォン",
+      "earphones",
+      "earphone"
+    ],
+    "wireless": [
+      "ワイヤレス",
+      "wireless"
+    ],
+    "oled": [
+      "有機elモデル",
+      "有機el",
+      "oled"
+    ],
+    "detect": [
+      "ディテクト",
+      "detect"
+    ]
+  },
+  "contextual": {
+    "switch": {
+      "variants": [
+        "スイッチ"
+      ],
+      "requires": [
+        "nintendo",
+        "ニンテンドー",
+        "任天堂",
+        "joy-con",
+        "ジョイコン",
+        "有機el"
+      ]
+    },
+    "vans": {
+      "variants": [
+        "バンズ"
+      ],
+      "requires": [
+        "スニーカー",
+        "sneaker",
+        "シューズ",
+        "old skool",
+        "オールドスクール",
+        "sk8",
+        "スリッポン",
+        "オーセンティック",
+        "authentic",
+        "スケート"
+      ]
+    },
+    "samba": {
+      "variants": [
+        "サンバ"
+      ],
+      "requires": [
+        "adidas",
+        "アディダス",
+        "スニーカー",
+        "sneaker",
+        "シューズ"
+      ]
+    },
+    "dunk": {
+      "variants": [
+        "ダンク"
+      ],
+      "requires": [
+        "nike",
+        "ナイキ",
+        "sb",
+        "スニーカー",
+        "sneaker",
+        "シューズ"
+      ]
+    }
+  },
+  "numbered_series": [
+    "switch",
+    "airpods",
+    "playstation",
+    "ps",
+    "kindle"
+  ],
+  "brands": [
+    "sony",
+    "nike",
+    "adidas",
+    "asics",
+    "new balance",
+    "converse",
+    "vans",
+    "puma",
+    "the north face",
+    "patagonia",
+    "uniqlo",
+    "muji",
+    "levis",
+    "champion",
+    "apple",
+    "nintendo",
+    "dyson",
+    "panasonic",
+    "balmuda",
+    "zojirushi"
+  ],
+  "generic": [
+    "jacket",
+    "sneaker",
+    "headphone",
+    "earphone",
+    "wireless"
+  ]
+}

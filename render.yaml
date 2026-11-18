@@ -1,0 +1,46 @@
+# Render.com Blueprint（リポジトリを接続して「New > Blueprint」でデプロイ）
+# 注意: 永続ディスク（推移の保存）は有料プラン（starter 以上・クレジットカード登録が必要）。
+# APIキーはこのファイルに書かず、Render の画面（Environment）でだけ入力する（N-4）。
+services:
+  - type: web
+    name: price-judge
+    runtime: docker
+    plan: starter
+    healthCheckPath: /healthz
+    disk:
+      name: pricedata
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: DEMO_MODE
+        value: auto
+      - key: DB_PATH
+        value: /data/prices.db
+      # 専門店（楽天市場店・Yahoo!店）に絞った追加検索の店数（取得元ごと。0で無効）
+      - key: SHOP_SEARCH_MAX
+        value: "2"
+      # N-3/R3-5: Render は Cloudflare 経由。Cloudflare が必ず上書きする CF-Connecting-IP を利用者IPとして使う
+      # （Render 以外では設定しないこと。既定ではヘッダは一切信用しない）
+      - key: TRUSTED_PROXY_HEADER
+        value: CF-Connecting-IP
+      - key: TRUST_PROXY
+        value: "0"
+      - key: ACCESS_CODE
+        sync: false
+      # 推移用識別子の秘密値・利用券の署名鍵（Render が自動でランダムな値を作る。DB と別の場所に置くため）
+      - key: HASH_SALT
+        generateValue: true
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: RAKUTEN_ORIGIN
+        sync: false
+      - key: RAKUTEN_APP_ID
+        sync: false
+      - key: RAKUTEN_ACCESS_KEY
+        sync: false
+      - key: YAHOO_APP_ID
+        sync: false
+      - key: KEEPA_API_KEY
+        sync: false
+      - key: LLM_API_KEY
+        sync: false
